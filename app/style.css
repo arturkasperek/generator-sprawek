@@ -1,0 +1,17 @@
+.app-container {
+  margin-top: 2em;
+}
+
+.tasks-list textarea {
+  min-height: 20em;
+}
+
+.task-item {
+  padding: 1em;
+  margin-bottom: 0.5em;
+  border: 1px dashed black;
+}
+
+.preview img {
+  width: 100%;
+}
