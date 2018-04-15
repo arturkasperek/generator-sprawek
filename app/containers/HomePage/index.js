@@ -16,6 +16,7 @@ import { Button, FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
 import SyntaxHighlighter from 'react-syntax-highlighter/prism';
 import { dark } from 'react-syntax-highlighter/styles/prism';
 import Dropzone from 'react-dropzone'
+import template from './template';
 
 function guid() {
   function s4() {
@@ -161,6 +162,12 @@ export default class HomePage extends React.Component {
             </div>
           </div>))}
         </div>
+        {this.state.items.length !== 0 && (<div>
+          <FormGroup>
+            <ControlLabel>LaTex</ControlLabel>
+            <FormControl value={template(this.state.items)} componentClass="textarea"/>
+          </FormGroup>
+        </div>)}
       </div>
     );
   }
